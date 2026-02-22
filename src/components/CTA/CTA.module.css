@@ -11,7 +11,7 @@
   left: 50%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(ellipse, rgba(200, 255, 0, .04) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(255, 255, 255, .04) 0%, transparent 70%);
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }

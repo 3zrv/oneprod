@@ -14,7 +14,7 @@
 .hovering {
   width: 60px;
   height: 60px;
-  background: rgba(200, 255, 0, .1);
+  background: rgba(255, 255, 255, .1);
 }
 
 .dot {

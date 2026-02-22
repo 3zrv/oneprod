@@ -78,15 +78,15 @@
 }
 
 .item:nth-child(1) .thumbInner {
-  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #1a1a2e);
+  background: linear-gradient(135deg, #1a1a1a, #222222, #2a2a2a, #1a1a1a);
 }
 
 .item:nth-child(2) .thumbInner {
-  background: linear-gradient(135deg, #2d1b2e, #3d1c3e, #521d60, #2d1b2e);
+  background: linear-gradient(135deg, #1e1e1e, #282828, #333333, #1e1e1e);
 }
 
 .item:nth-child(3) .thumbInner {
-  background: linear-gradient(135deg, #1b2e1a, #1c3e2a, #1d6040, #1b2e1a);
+  background: linear-gradient(135deg, #1c1c1c, #252525, #303030, #1c1c1c);
 }
 
 .overlay {
@@ -137,7 +137,7 @@
 
 .client {
   font-size: .85rem;
-  color: rgba(240, 236, 228, .5);
+  color: rgba(240, 240, 240, .5);
 }
 
 .number {
@@ -146,7 +146,7 @@
   right: 30px;
   font-family: 'Space Mono', monospace;
   font-size: .65rem;
-  color: rgba(240, 236, 228, .2);
+  color: rgba(240, 240, 240, .2);
   z-index: 3;
 }
 

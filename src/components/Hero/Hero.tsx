@@ -14,8 +14,8 @@ export default function Hero({ siteVisible }: HeroProps) {
   useEffect(() => {
     if (!siteVisible) return
 
-    const lineTimeout = setTimeout(() => setLinesRevealed(true), 600)
-    const bottomTimeout = setTimeout(() => setBottomRevealed(true), 1200)
+    const lineTimeout = setTimeout(() => setLinesRevealed(true), 1200)
+    const bottomTimeout = setTimeout(() => setBottomRevealed(true), 1800)
 
     return () => {
       clearTimeout(lineTimeout)
