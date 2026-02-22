@@ -1,0 +1,104 @@
+.services {
+  padding: 120px 48px 160px;
+  border-top: 1px solid var(--border);
+}
+
+.label {
+  font-family: 'Space Mono', monospace;
+  font-size: .65rem;
+  letter-spacing: .4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.label::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-top: 60px;
+}
+
+.card {
+  padding: 60px 48px;
+  border: 1px solid var(--border);
+  position: relative;
+  transition: background .5s ease;
+}
+
+.card:hover {
+  background: rgba(200, 255, 0, .02);
+}
+
+.number {
+  font-family: 'Space Mono', monospace;
+  font-size: .6rem;
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.desc {
+  font-size: .9rem;
+  line-height: 1.7;
+  color: rgba(240, 236, 228, .5);
+  max-width: 340px;
+}
+
+.arrow {
+  position: absolute;
+  top: 60px;
+  right: 48px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s ease;
+}
+
+.card:hover .arrow {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.arrow svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--fg);
+  transition: stroke .4s, transform .4s;
+}
+
+.card:hover .arrow svg {
+  stroke: var(--bg);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .services {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

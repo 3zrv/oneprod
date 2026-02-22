@@ -1,0 +1,35 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transition: transform .15s ease, width .3s ease, height .3s ease;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+.hovering {
+  width: 60px;
+  height: 60px;
+  background: rgba(200, 255, 0, .1);
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background: var(--accent);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 10001;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 900px) {
+  .cursor, .dot {
+    display: none;
+  }
+}
